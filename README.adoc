@@ -48,6 +48,13 @@ On the main page there are 4 section:
 * section with 5 latest contractors' offers in brief layout with a header "View all"
 
 
+When user is not logged in and clicks _Add job offer_  or _Offer your skills_ he is asked to log in the portal or register.
+
+When user is logged in and clicks _Add job offer_ or _Offer your skills_ the appropriate form to add job offer or add availability is displayed.
+
+When user chooses to see all job offers, he is redirected to page with a list of brief layouts of the first 20 job offers.  When user wants to see all contractors' offers he is provided with a page with a list of brief layouts of availability offers.
+
+
 [#head]
 ==== HEADING
 Heading is shared by all pages of the service. It contains components:
@@ -55,12 +62,6 @@ Heading is shared by all pages of the service. It contains components:
 * portal name and logo
 * register / login or  name of logged user / logout
 * section with buttons: Add job offer / Offer your skills
-
-When user is not logged in and clicks _Add job offer_  or _Offer your skills_ he is asked to log in the portal or register.
-
-When user is logged in and clicks _Add job offer_ or _Offer your skills_ the appropriate form to add job offer or add availability is displayed.
-
-When user chooses to see all job offers, he is redirected to page with a list of brief layouts of the first 20 job offers.  When user wants to see all contractors' offers he is provided with a page with a list of brief layouts of availability offers.
 
 [#brief_job_offer_layout]
 ==== BRIEF JOB OFFER LAYOUT

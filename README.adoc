@@ -10,15 +10,15 @@ image::birds_rainbow-lorakeets.png[Birds,200,100]
 
 == OVERALL DESCRIPTION
 
-Web application that matches principals and contractors according to their requirements for task to do, location and date / term. The application allows you to: +
+Web application {project_name} that matches principals and contractors according to their requirements for task to do, location and date / term. The application allows you to: +
 
-. find the right person for the urgent job right now
-. inform what are your skills, when you are available and earn some money
-. pay no fee!
+. *find the right person for the urgent job right now*
+. *inform what are your skills, when you are available and earn some money*
+. *pay no fee!*
 
 Application enables companies or individuals to find temporary employees to complete specific task  / in unexpected situations. In parallel people who are looking for side job can find best suited job opportunity and earn additional money. To optimize searching process there is also the possibility of matching employers with potential candidates based on criteria they have set up in their profiles.
 
-Application can be used on every computer connected to the Internet and also on smartphones.
+Application {project_name} can be used on every computer connected to the Internet and also on smartphones.
 
 === REQUIREMENTS
 
@@ -33,8 +33,25 @@ Application can be used on every computer connected to the Internet and also on 
 [#main_page]
 === MAIN PAGE OF {project_name}
 
+On the main page there are 4 section:
+
+* heading
+* section with buttons: I am an employer / I am a contractor
+* section with 5 latest job offers in brief layout with a header "View all"
+* section with 5 latest contractors' offers in brief layout with a header "View all"
 
 
+Heading is shared by all pages of the service. It contains components:
+
+* portal name and logo
+* register / login or  name of logged user / logout
+* section with buttons: Add job offer / Offer your skills
+
+When user is not logged in and clicks _Add job offer_  or _Offer your skills_ he is redirected to form where he can log in the portal or register.
+
+When user is logged in and clicks _Add job offer_ or _Offer your skills_ the appropriate form to add job offer or add availability is displayed.
+
+When user chooses to see all job offers, he is redirected to page with a list of brief layouts of the first 20 job offers.  When user wants to see all contractors' offers he is provided with a page with a list of brief layouts of availability offers.
 
 
 

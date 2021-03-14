@@ -33,6 +33,10 @@ Application {project_name} can be used on every computer connected to the Intern
 * <<contractor_offers>>
 * <<single_job_offer>>
 * <<single_contractor_offer>>
+* <<user_page>>
+** <<private_user_page>>
+** <<public_user_page>>
+
 * <<authors>>
 
 
@@ -122,6 +126,24 @@ From this page the user has the possibility to respond to this offer.
 The page with contractors availability offers displays some information about the contractor profile. Besides, possible location, availability  and kind of services offered, it presents as well full name of contractor,  contact details, experience, rating, link to the contractor's public profile, link to the list of other contractor's offers.
 
 From this page the employer has the possibility to respond to this offer.
+
+[#user_page]
+=== USER PAGE
+
+The application {project_name} allows the user to fill in and update his public profile and manage his own advertisements as well as rate other  users in case they cooperated together.
+
+[#private_user_page]
+==== PRIVATE PAGE
+
+The private user profile consist of sections: general information, own offers, offers that he answered, rating other users.
+The user has also possibility to choose the default main page after logging (a list of job offers or a list of contractors' offers ).
+General information to set in user profile: name, short name, logo, types of offered services, experience, images that show sample of previous finished work.
+User can also add other users to favourite list and manage this list.
+
+[#public_user_page]
+==== PUBLIC PROFILE
+
+The public profile of user displays: name, logo, public contact details, key-words of offered services, short description, experience, images upload by user, rating, link to current list of added offers.  If the user is a contractor and simultaneously an employer additional information are presented (e.g. rating, link to offers).
 
 
 [#authors]

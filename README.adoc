@@ -8,6 +8,18 @@ KATARZYNA GRABOWSKA, JOANNA RZESZÓTKO-DONIEC, JAKUB ZIELIŃSKI, PIOTR WÓJCIK
 
 image::birds_rainbow-lorakeets.png[Birds,200,100]
 
+== OVERALL DESCRIPTION
+
+Web application that matches principals and contractors according to their requirements for task to do, location and date / term. The application allows you to: +
+
+. find the right person for the urgent job right now
+. inform what are your skills, when you are available and earn some money
+. pay no fee!
+
+Application enables companies or individuals to find temporary employees to complete specific task  / in unexpected situations. In parallel people who are looking for side job can find best suited job opportunity and earn additional money. To optimize searching process there is also the possibility of matching employers with potential candidates based on criteria they have set up in their profiles.
+
+Application can be used on every computer connected to the Internet and also on smartphones.
+
 === REQUIREMENTS
 
 {journey}[description from Journey]
@@ -17,8 +29,15 @@ image::birds_rainbow-lorakeets.png[Birds,200,100]
 * <<authors>>
 
 
+
 [#main_page]
 === MAIN PAGE OF {project_name}
+
+
+
+
+
+
 
 [#authors]
 === AUTHORS

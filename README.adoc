@@ -1,0 +1,35 @@
+= EL PROJECTE GRANDE - DESIGN DOCUMENT
+KATARZYNA GRABOWSKA, JOANNA RZESZÓTKO-DONIEC, JAKUB ZIELIŃSKI, PIOTR WÓJCIK
+14.03/2021
+:project_name: El Grande
+:imagesdir: ./images
+:journey: https://journey.code.cool/v2/project/curriculum/project/el-proyecte-grande-design/team/general
+
+
+image::birds_rainbow-lorakeets.png[Birds,200,100]
+
+=== REQUIREMENTS
+
+{journey}[description from Journey]
+
+=== CONTENT
+* <<main_page>>
+* <<authors>>
+
+
+[#main_page]
+=== MAIN PAGE OF {project_name}
+
+[#authors]
+=== AUTHORS
+[%hardbreaks]
+Katarzyna Grabowska
+Joanna Rzeszótko-Doniec
+Jakub Zieliński
+Piotr Wójcik
+
+
+
+
+
+

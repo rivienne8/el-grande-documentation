@@ -26,6 +26,12 @@ Application {project_name} can be used on every computer connected to the Intern
 
 === CONTENT
 * <<main_page>>
+** <<brief_job_offer_layout>>
+** <<brief_contractor_offer_layout>>
+* <<job_offers>>
+* <<contractor_offers>>
+* <<single_job_offer>>
+* <<single_contractor_offer>>
 * <<authors>>
 
 
@@ -47,12 +53,61 @@ Heading is shared by all pages of the service. It contains components:
 * register / login or  name of logged user / logout
 * section with buttons: Add job offer / Offer your skills
 
-When user is not logged in and clicks _Add job offer_  or _Offer your skills_ he is redirected to form where he can log in the portal or register.
+When user is not logged in and clicks _Add job offer_  or _Offer your skills_ he is asked to log in the portal or register.
 
 When user is logged in and clicks _Add job offer_ or _Offer your skills_ the appropriate form to add job offer or add availability is displayed.
 
 When user chooses to see all job offers, he is redirected to page with a list of brief layouts of the first 20 job offers.  When user wants to see all contractors' offers he is provided with a page with a list of brief layouts of availability offers.
 
+[#brief_job_offer_layout]
+==== BRIEF JOB OFFER LAYOUT
+
+
+
+
+[#brief_contractor_offer_layout]
+==== BRIEF CONTRACTOR'S OFFER LAYOUT
+
+[#job_offers]
+=== JOB OFFERS
+
+The page displays a list of the 20 latest offers in brief layout. There is a pagination at the bottom and above list of offered jobs. Every page displays 20 offers.
+
+There is a section that allows user to filter offers according to:
+
+* range of dates
+* location
+* kind of job (industry name)
+* principal's name
+
+It is possible to combine different filtering criteria to get the most suitable results.
+
+User can also browse offers in a dedicated map tool that shows offers on a map.
+
+
+[#contractor_offers]
+=== CONTRACTOR'S OFFER
+
+The page displays a list of the 20 latest offers in brief layout. There is a pagination at the bottom and above list of offered contractors' availability. Every page displays 20 offers.
+
+There is a section that allows user to filter offers according to:
+
+* range of dates
+* location
+* kind of job (industry name)
+* contractor's name
+* experience (yes /no)
+
+It is possible to combine different filtering criteria to get the most suitable results.
+
+User can also browse offers in a dedicated map tool that shows offers on a map.
+
+
+[#single_job_offer]
+=== SINGLE JOB OFFER
+
+[#single_contractor_offer]
+=== SINGLE CONTRACTOR OFFER
 
 
 

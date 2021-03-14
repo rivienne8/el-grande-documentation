@@ -26,6 +26,7 @@ Application {project_name} can be used on every computer connected to the Intern
 
 === CONTENT
 * <<main_page>>
+** <<head>>
 ** <<brief_job_offer_layout>>
 ** <<brief_contractor_offer_layout>>
 * <<job_offers>>
@@ -47,6 +48,8 @@ On the main page there are 4 section:
 * section with 5 latest contractors' offers in brief layout with a header "View all"
 
 
+[#head]
+==== HEADING
 Heading is shared by all pages of the service. It contains components:
 
 * portal name and logo
@@ -62,11 +65,13 @@ When user chooses to see all job offers, he is redirected to page with a list of
 [#brief_job_offer_layout]
 ==== BRIEF JOB OFFER LAYOUT
 
-
+A brief layout of job offer contains: date, location, kind of job, payment , if it was specified, and employer's short name or logo.
 
 
 [#brief_contractor_offer_layout]
 ==== BRIEF CONTRACTOR'S OFFER LAYOUT
+
+A brief layout of contractor offer contains: date, location, kind of services, expected payment , if it was specified and the short name of contractor.
 
 [#job_offers]
 === JOB OFFERS
@@ -106,9 +111,16 @@ User can also browse offers in a dedicated map tool that shows offers on a map.
 [#single_job_offer]
 === SINGLE JOB OFFER
 
+The offer page displays all information about the job offer. Besides location, date and kind of job, it presents as well full name of employer and limited contact details, employer's rating, description of the work, status is experience required, is a repetitive work,  link to the employer profile, link to the list of current employer's offers.
+
+From this page the user has the possibility to respond to this offer.
+
 [#single_contractor_offer]
 === SINGLE CONTRACTOR OFFER
 
+The page with contractors availability offers displays some information about the contractor profile. Besides, possible location, availability  and kind of services offered, it presents as well full name of contractor,  contact details, experience, rating, link to the contractor's public profile, link to the list of other contractor's offers.
+
+From this page the employer has the possibility to respond to this offer.
 
 
 [#authors]

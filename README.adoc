@@ -47,7 +47,8 @@ Application {project_name} can be used on every computer connected to the Intern
 On the main page there are 4 section:
 
 * heading
-* section with buttons: I am an employer / I am a contractor
+* section with buttons: Add job offer / Offer your skills
+//* section with buttons: I am an employer / I am a contractor
 * section with 5 latest job offers in brief layout with a header "View all"
 * section with 5 latest contractors' offers in brief layout with a header "View all"
 
@@ -64,19 +65,27 @@ When user chooses to see all job offers, he is redirected to page with a list of
 Heading is shared by all pages of the service. It contains components:
 
 * portal name and logo
-* register / login or  name of logged user / logout
-* section with buttons: Add job offer / Offer your skills
+* avatar (will display image if added to profile), if clicked will display:
+** if user is logged in:
+*** logout
+*** view offers I posted
+*** view matched offers
+*** view offers I replied to
+** if user is not logged in:
+*** register
+*** login or  name of logged user
+
 
 [#brief_job_offer_layout]
 ==== BRIEF JOB OFFER LAYOUT
 
-A brief layout of job offer contains: date, location, kind of job, payment , if it was specified, and employer's short name or logo.
+A brief layout of job offer contains: start date, end date, location, kind of job, payment, if it was specified, and employer's short name or logo.
 
 
 [#brief_contractor_offer_layout]
 ==== BRIEF CONTRACTOR'S OFFER LAYOUT
 
-A brief layout of contractor offer contains: date, location, kind of services, expected payment , if it was specified and the short name of contractor.
+A brief layout of contractor offer contains: date, location, kind of services, expected payment, if it was specified and the short name of contractor.
 
 [#job_offers]
 === JOB OFFERS
@@ -85,10 +94,14 @@ The page displays a list of the 20 latest offers in brief layout. There is a pag
 
 There is a section that allows user to filter offers according to:
 
+* key word
 * range of dates
 * location
 * kind of job (industry name)
-* principal's name
+* availability
+* experience
+* total hours of work
+* employee name (from profile)
 
 It is possible to combine different filtering criteria to get the most suitable results.
 
@@ -96,17 +109,22 @@ User can also browse offers in a dedicated map tool that shows offers on a map.
 
 
 [#contractor_offers]
-=== CONTRACTOR'S OFFER
+=== CONTRACTOR'S OFFERS
 
 The page displays a list of the 20 latest offers in brief layout. There is a pagination at the bottom and above list of offered contractors' availability. Every page displays 20 offers.
 
 There is a section that allows user to filter offers according to:
 
+* key word
+* industry
 * range of dates
 * location
 * kind of job (industry name)
+* availability
+* experience required
+* total hours of work
 * contractor's name
-* experience (yes /no)
+
 
 It is possible to combine different filtering criteria to get the most suitable results.
 
@@ -116,16 +134,48 @@ User can also browse offers in a dedicated map tool that shows offers on a map.
 [#single_job_offer]
 === SINGLE JOB OFFER
 
-The offer page displays all information about the job offer. Besides location, date and kind of job, it presents as well full name of employer and limited contact details, employer's rating, description of the work, status is experience required, is a repetitive work,  link to the employer profile, link to the list of current employer's offers.
+Single job offer display following job offer details:
 
-From this page the user has the possibility to respond to this offer.
+* industry
+* title
+* description
+* range of dates when work can be performed (from - to)
+* preferred work schedule (day of the week and time of the day)
+* location
+* required experience (yes/no)
+* tags (optional: only if added when creating the offer)
+* total hours of work (optional - displayed only if added to offer)
+* salary (optional - displayed only if added to offer)
+
+Additionally, the offer contains:
+
+* link to the employer profile
+* link to the list of current employer's offers
+* "Get in touch" button - when clicked the message is sent to offer Owner
+
 
 [#single_contractor_offer]
 === SINGLE CONTRACTOR OFFER
 
-The page with contractors availability offers displays some information about the contractor profile. Besides, possible location, availability  and kind of services offered, it presents as well full name of contractor,  contact details, experience, rating, link to the contractor's public profile, link to the list of other contractor's offers.
+Single job offer contains following job offer details:
 
-From this page the employer has the possibility to respond to this offer.
+* industry
+* title
+* description
+* range of dates when work can be performed (from - to)
+* preferred work schedule (day of the week and time of the day)
+* location
+* required experience (yes/no)
+* tags (optional: only if added when creating the offer)
+* total hours of work that employee is willing to work (optional - displayed only if added to offer)
+* expected salary (optional - displayed only if added to offer)
+
+Additionally, the offer contains:
+
+* link to the public contractor's profile
+* link to the list of current contractor's offers
+* "Get in touch" button - when clicked the message is sent to offer Owner
+
 
 [#user_page]
 === USER PAGE

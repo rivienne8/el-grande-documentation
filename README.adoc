@@ -143,9 +143,10 @@ Single job offer display following job offer details:
 * preferred work schedule (day of the week and time of the day)
 * location
 * required experience (yes/no)
-* tags (optional: only if added when creating the offer)
+* required skills (optional: only if added when creating the offer)
 * total hours of work (optional - displayed only if added to offer)
 * salary (optional - displayed only if added to offer)
+* supporting documents - images or files (optional - displayed only if added to offer)
 
 Additionally, the offer contains:
 
@@ -166,9 +167,10 @@ Single job offer contains following job offer details:
 * preferred work schedule (day of the week and time of the day)
 * location
 * required experience (yes/no)
-* tags (optional: only if added when creating the offer)
+* skills (optional: only if added when creating the offer)
 * total hours of work that employee is willing to work (optional - displayed only if added to offer)
 * expected salary (optional - displayed only if added to offer)
+* supporting documents - images or files (optional - displayed only if added to offer)
 
 Additionally, the offer contains:
 

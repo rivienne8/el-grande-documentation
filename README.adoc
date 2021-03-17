@@ -36,6 +36,9 @@ Application {project_name} can be used on every computer connected to the Intern
 * <<user_page>>
 ** <<private_user_page>>
 ** <<public_user_page>>
+* <<register_page>>
+* <<login_page>>
+* <<premium_option>>
 
 * <<authors>>
 
@@ -196,6 +199,48 @@ User can also add other users to favourite list and manage this list.
 ==== PUBLIC PROFILE
 
 The public profile of user displays: name, logo, public contact details, key-words of offered services, short description, experience, images upload by user, rating, link to current list of added offers.  If the user is a contractor and simultaneously an employer additional information are presented (e.g. rating, link to offers).
+
+
+[#register_page]
+=== REGISTER PAGE
+
+* registration page available from the home page and from all pages for unregistered users via the button in the corner of the page
+* page on the new route with the form
+* fields: email address, password, repeat password, telephone number, regulations acceptance (checkbox) with a hyperlink to the page with the regulations
+* there is a validation of the entered password (lowercase, uppercase, digits, special character, min 8 characters)
+* after pressed registration button the data from the form goes to the database, the password is hashed
+* after clicking the registration button, a popup appears with a 6-digit code to no (code sent by text message / randomly generated in the terminal)
+* after entering the correct code, the account is considered verified, in the case of an incorrect code, the information about the error and a repeated attempt is displayed
+* after successful registration user will be redirected to the user profile page
+
+==== Technologies:
+* @PostMapping(“/register”)
+* postgreSql / pgAdmin - saving the user to the database
+* table register_user (id, email, password[hash], phone_number)
+* return (“/user”)
+
+[#login_page]
+=== LOGIN PAGE
+
+* login page available from the home page and from all pages available to unregistered users via the button in the corner of the page
+* after going to the login page, there is a form with the login and password
+* after a successful date, the user is redirected to the home page
+* in case of incorrect login data, an error message is displayed
+
+
+==== Technologies:
+* @PostMapping(“/login”)
+* postgreSql / pgAdmin - checking if user exist in database
+* return (“/”)
+
+[#premium_option]
+===  PREMIUM OPTION PAGE
+
+Highlighting the advertisement (job offerer): option 3-7-14 days. For every matched the advertisement is moved to the top of the page, which goes to the home page.
+
+==== Technologies:
+* creating a “/ premium_options” route with a choice of additional plans
+* creating a "/ payment" route with payment methods (credit card, paypal)
 
 
 [#authors]
